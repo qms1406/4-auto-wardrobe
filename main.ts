@@ -1,6 +1,6 @@
 pins.setPull(DigitalPin.P2, PinPullMode.PullUp)
 let door = false
-let strip = neopixel.create(DigitalPin.P0, 1, NeoPixelMode.RGB)
+let strip = neopixel.create(DigitalPin.P1, 1, NeoPixelMode.RGB)
 basic.forever(function () {
     if (pins.digitalReadPin(DigitalPin.P2) == 0) {
         door = !(door)
